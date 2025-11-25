@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Cobot Microsoft Learn</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="container">
+        <section id="dashboard-section" class="dashboard-section tab-content active">
+            <h3>Analyse des données</h3>
+            <div class="dashboard-filters">
+                <div class="filter-group">
+                    <label>Niveaux:</label>
+                    <div id="levels-filter-checkboxes" class="checkbox-container">
+                        <!-- Level checkboxes will be loaded here -->
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Types:</label>
+                    <div id="types-filter-checkboxes" class="checkbox-container">
+                        <!-- Type checkboxes will be loaded here -->
+                    </div>
+                </div>
+                <button id="update-analytics-button" class="btn-secondary">Mettre à jour l'analytique</button>
+            </div>
+
+            <div class="kpis-area">
+                <h3>Indicateurs Clés</h3>
+                <div id="kpis-output" class="kpi-grid">
+                    <!-- KPIs will be loaded here -->
+                </div>
+            </div>
+
+            <div class="charts-area">
+                <div class="chart-row">
+                    <div class="chart-container" id="chart1-output"></div>
+                    <div class="chart-container" id="chart2-output"></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-container" id="chart3-output"></div>
+                    <div class="chart-container" id="chart4-output"></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-container" id="chart5-output"></div>
+                    <div class="chart-container" id="chart6-output"></div>
+                </div>
+            </div>
+
+            <div class="data-preview-area">
+                <h3>Aperçu des données filtrées</h3>
+                <div id="data-preview-output" class="data-table-container">
+                    <!-- Data preview table will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
